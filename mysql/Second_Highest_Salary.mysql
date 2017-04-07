@@ -1,0 +1,31 @@
+// https://leetcode.com//problems/second-highest-salary/#/description		 QuestionId:176
+# Write your MySQL query statement below
+
+
+
+SELECT MAX( Salary) as SecondHighestSalary
+  FROM Employee
+ WHERE Salary < ( SELECT MAX( Salary) FROM Employee )
+ 
+
+-- The following doesnt return NULL, otherwise its good
+-- select Salary as SecondHighestSalary from Employee e1
+-- where 
+-- 2 = (Select count(distinct Salary) from Employee e2 where e1.Salary <= e2.Salary)
+/*----------------------------------------------------------------------------------- 
+ Problem: 
+
+Write a SQL query to get the second highest salary from the Employee table.
+
+
+
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+
+
+For example, given the above Employee table, the second highest salary is 200. If there is no second highest salary, then the query should return null.*/

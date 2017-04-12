@@ -40,7 +40,8 @@ A solution is:
 ]
 
 Solution:
-The basic idea is to set a key for each group: the sum of the difference between the adjacent chars in one string. Then we can easily group the strings belonging to the same shifting sequence with the same key. The code is as the following:
+The basic idea is to set a key for each group: the sum of the difference between the adjacent chars in one string.
+Then we can easily group the strings belonging to the same shifting sequence with the same key. The code is as the following:
 */
 /*----------------------------------------------------------------------------------- 
  Problem: 

@@ -18,7 +18,7 @@ public class Solution {
         } else {
             
             for(int i = start; i <= n; i++) {
-                if( n % i == 0 ) {
+                if( n % i == 0 ) { // n is divisible by i
                     tempList.add(i);
                     backtrack(res, tempList, n/i, i);
                     tempList.remove(tempList.size()-1);

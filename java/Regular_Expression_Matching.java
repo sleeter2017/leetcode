@@ -1,8 +1,3 @@
-package leetCodeAccepted;
-
-/**
- * Created by shivan on 3/5/17.
- */
 // Explanation: https://www.youtube.com/watch?v=l3hda49XcDE
 //http://articles.leetcode.com/regular-expression-matching/
 // Related: https://leetcode.com/problems/wildcard-matching/

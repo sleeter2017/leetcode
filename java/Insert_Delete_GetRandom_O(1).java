@@ -20,6 +20,8 @@ public class RandomizedSet {
     }
     
     /** Removes a value from the set. Returns true if the set contained the specified element. */
+    /* NOTE:  remove() is O(1) operation only if we remove last element, hence we are deleting last element */
+
     public boolean remove(int val) {
         if ( ! locs.containsKey(val) ) return false;
         int loc = locs.get(val);

@@ -3,8 +3,8 @@ import java.io.*;
 import java.util.*; 
 public class Solution {
     public List<String> letterCombinations(String digits) {
-        
-        String[] map = new String[] {"0","1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+        String[] map =  {"0","1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         LinkedList<String> res = new LinkedList<String>();
         if(digits.length() == 0) return res;
         

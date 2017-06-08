@@ -14,11 +14,25 @@ public class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root == null) return null;
         
+        /* Recursive
         TreeNode left = invertTree(root.left);
         TreeNode right = invertTree(root.right);
         root.left = right;
-        root.right = left;
-        
+        root.right = left;  */
+
+        /*Iterative*/
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        stack.add(root);
+        while(!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            TreeNode tmp = node.right;
+            node.right = node.left;
+            node.left = tmp;
+            if(node.left != null) stack.push(node.left);
+            if(node.right != null) stack.push(node.right);
+        }
+
+
         return root;
     }
     

@@ -30,7 +30,8 @@ public class Solution {
         while (!queue.isEmpty()){
             tail.next=queue.poll();
             tail=tail.next;
-            
+
+            // add the next element from the same list where current smallest is coming
             if (tail.next!=null)
                 queue.add(tail.next);
         }

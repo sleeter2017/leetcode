@@ -53,7 +53,7 @@ public class Solution {
                 }
 
                 if (p.charAt(col) == '*') {
-                    if (p.charAt(col-1) != s.charAt(row) && p.charAt(col-1) != '.') {
+                    if (p.charAt(col-1) != s.charAt(row) && p.charAt(col-1) != '.') {  // should not be .*   or previous matching character
                         dp[row+1][col+1] = dp[row+1][col-1];//2 left: in this case, a* only counts as empty
                     } else {
                         dp[row+1][col+1] =
